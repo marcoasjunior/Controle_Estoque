@@ -1,0 +1,425 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: Arial;
+    background-color: #f4f4f4
+}
+
+
+
+.container_hearder{
+    display: flex;
+    background-color:  #0CD870;
+    overflow: hidden;
+    height: 70px;
+    align-items: center;
+
+
+
+    .container_icon{
+        display: block;
+        width: 50%;
+        margin-left: 20px;
+        
+
+        .icon_menu_header{
+            width: 40px;
+            fill: white;
+            color:white;
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width: 400px) {
+            width: 10%;
+        }
+    }
+    
+
+
+    .container_links_header{
+        display: inline-block;
+        max-width: 50%;
+        margin-left: auto;
+        text-align: right; 
+        align-items: center;
+        display: flex !important;
+
+             .links_header{
+                 padding: 5px;
+                 margin: 5px;
+                 color: #fff;
+                 font-size: 30px;
+                 margin-right: 40px;
+                 display: inline-block;
+                 
+                 @media screen and (max-width: 400px) {
+                     width: 20%;
+                     font-size: 25px;
+                }
+             }
+    }
+
+
+
+    .a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+        &:hover {
+            border-bottom: 1px solid white;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    ul{
+        margin: 8px 0 0 0;
+        list-style: none;
+    }
+}
+
+.container_side_menu{
+    min-height: 100%;
+    text-align: right;
+
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: #f7f7f7;
+    box-shadow: 4px 0px 8px rgba(49, 49, 49, 0.25);
+    box-sizing: border-box;
+
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition:0.5s;
+
+    .size_icon_menu{
+        width: 23px;
+    }
+
+
+    .links_left_menu{
+        margin-right: 20px;
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 22px;
+        color: rgb(77, 77, 77);
+        display: block;
+        line-height: 50px;
+        transition: 0.3s;
+        
+        &:hover{
+            color: rgb(0, 0, 0);
+            font-size: 27px;
+        }
+    }
+
+    a{
+        padding: 10px 10px 10px 30px;
+        font-size: 22px;
+        color: rgb(83, 83, 83);
+        display: block;
+        transition: 0.3s;
+        text-decoration: none;
+        
+        &:hover{
+            display: block;
+            color: rgb(0, 0, 0);
+            font-size: 27px;
+        }
+    }
+
+    .buttons_side_menu{
+        position: absolute;
+        top:0;
+        right: 22px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+
+// corpo da pagina
+
+.width_container{
+    width: 98%;
+    max-width: 1500px;
+    box-sizing: border-box;
+}
+.container_home{
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 20px;
+
+
+    @media screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .title_box {
+        font-size: 22px;
+        margin-bottom: 20px;
+        display: block;
+        color: rgb(31, 31, 31);
+
+        @media screen and (max-width:500px ) {
+            display: inline-block;
+            width: 38%;
+            font-size: 23px;
+        }
+    }
+    
+    .resultado_box{
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        color: rgb(31, 31, 31);
+        
+        @media screen and (max-width:500px ) {
+            display: inline-block;
+            width: 38%;
+            font-size: 35px;
+            vertical-align: text-bottom;
+            margin-left: 10px;
+        }
+    }
+    
+
+    
+     
+    
+    .content_block{
+        display: inline-block;
+        background-color: rgb(216, 216, 216);
+        // border-radius: 15px;
+        border: 1px solid #0CD870;
+        box-shadow: 2px 0px 8px rgba(49, 49, 49, 0.25);
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 20px;
+        
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin: 12px auto;
+            }
+    }
+    
+    
+}
+
+.bloco_informacoes{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(216, 216, 216);
+    border-radius: 15px;
+    box-shadow: 4px 0px 8px rgba(49, 49, 49, 0.25);
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 81.7%;
+
+    @media screen and (max-width: 600px) {
+        width: 20%;
+        font-size: 25px;
+   }
+
+   .title_informations{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    width: 600px;
+    margin: 30px;
+    margin-bottom: 50px;
+    display: block;
+    color: rgb(31, 31, 31);
+   }
+   .container_informations{
+       display: block;
+       border: 2px solid black;
+       margin: 25px;
+
+       .text_information{
+            display: block;
+            border-bottom: 2px solid black;
+            padding: 5px;
+            margin: 10px;
+            line-height: 50px;
+            color: rgb(31, 31, 31);
+            font-size: 30px;
+    
+       }
+   }
+}
+
+
+
+
+
+.title_bloco{
+    display: block;
+    // max-width: 24%;
+    height: 60px;
+    font-size: 30px;
+    background-color: #0CD870;
+    border-radius: 15px;
+    margin-left: 26px;
+    line-height: 60px;
+    width: 300px;
+    position: relative;
+    color: white;
+    margin: 0;
+    margin-left: 30px;
+
+    @media screen and (max-width: 880px) {
+        max-width: 100%;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+
+
+
+// container da seção-------------------------------------------------------------------------------------------------------------------
+.bloco_status{
+    display: inline-block;
+    vertical-align: top;
+    .bloco_status_header{
+        margin-bottom: -30px;
+    }
+    
+    
+    .bloco_status_body{
+        background-color: #d8d8d8;
+        padding-top: 60px;
+        min-height: 400px;
+        // border-radius: 15px;
+        border: 1px solid #0CD870;
+        box-shadow: 2px 0px 8px rgba(49, 49, 49, 0.25);
+        box-sizing: border-box;
+    }
+    
+    
+    
+    .container_vendas{
+        display: flex;
+        line-height: 40px;
+        border-bottom: 1px solid #000;
+        
+        .content_vendas_recentes_title{
+            margin-top: 10px;
+            display: block;
+            margin-top: 5px;
+            width: 50%;
+            text-align: center;
+            margin-right: auto;
+            margin-left: 10px; 
+            font-size: 20px;
+        }
+        
+        .content_vendas_recentes{
+            // display: block;
+            // margin-top: 5px;
+            width: 50%;
+            text-align: center;
+            margin-right: auto;
+            margin-left: 10px; 
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
+.container_informations{
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 20px;
+    
+    
+}
+
+// bloco da direita===================================
+.container_informations_right{
+    max-width: 100%;
+    width: 800px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    
+    @media screen and (max-width: 880px) {
+        max-width: 100%;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+
+.cointainer_information{
+    display: flex;
+    line-height: 60px;
+    border-bottom: 1px solid #000;
+
+    .content_informations{
+        font-size: 25px;
+        display: block;
+        margin-left: 50px;
+
+        @media screen and (max-width: 400px) {
+            font-size: 18px;
+       }
+
+    }
+}
+
+// bloco da direita===================================
+
+
+
+
+
+
+
+// bloco da esquerda===================================
+
+.container_informations_left{
+    max-width: 100%;
+    width: 400px;
+    margin-bottom: 40px;
+    
+    @media screen and (max-width: 880px) {
+        max-width: 100%;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+// bloco da esquerda===================================
+
+
+
+
+
+
+
+// container da seção-------------------------------------------------------------------------------------------------------------------
+
